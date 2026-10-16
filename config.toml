@@ -1,0 +1,14 @@
+lang = "en"
+
+[telegram]
+token = "8829294789:AAHfDdISKlAwRW_yHydGZOrLNVtqtEV9B6Y"
+
+[[storages]]
+name = "Local"
+type = "local"
+enable = true
+base_path = "./downloads"
+
+[[users]]
+id = 8277146073
+storages = []
