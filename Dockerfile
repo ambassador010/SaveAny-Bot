@@ -7,12 +7,12 @@ ARG BuildTime="Unknown"
 WORKDIR /app
 
 COPY go.mod go.sum ./
-RUN --mount=type=cache,target=/go/pkg/mod \
+RUN --mount=type=cache,id=s/e7b2a76a-460f-49d5-9bd6-11ac3fe2d74d-/go/pkg/mod,target=/go/pkg/mod \
     go mod download
 
 COPY . .
-RUN --mount=type=cache,target=/root/.cache/go-build \
-    --mount=type=cache,target=/go/pkg \
+RUN --mount=type=cache,id=s/e7b2a76a-460f-49d5-9bd6-11ac3fe2d74d-/root/.cache/go-build,target=/root/.cache/go-build \
+    --mount=type=cache,id=s/e7b2a76a-460f-49d5-9bd6-11ac3fe2d74d-/go/pkg,target=/go/pkg \
     CGO_ENABLED=0 \
     go build -trimpath \
     -ldflags=" \
