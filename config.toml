@@ -11,4 +11,4 @@ base_path = "./downloads"
 
 [[users]]
 id = 8277146073
-storages = []
+storages = ["local"]
