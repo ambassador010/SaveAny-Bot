@@ -4,7 +4,7 @@ lang = "en"
 token = "8829294789:AAHfDdISKlAwRW_yHydGZOrLNVtqtEV9B6Y"
 
 [[storages]]
-name = "Local"
+name = "local"
 type = "local"
 enable = true
 base_path = "./downloads"
