@@ -29,6 +29,7 @@ FROM alpine:latest
 RUN apk add --no-cache curl ffmpeg yt-dlp
 
 WORKDIR /app
+COPY config.toml /app/config.toml
 
 COPY --from=builder /app/saveany-bot .
 COPY entrypoint.sh .
