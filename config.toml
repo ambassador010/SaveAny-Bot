@@ -11,4 +11,14 @@ base_path = "./downloads"
 
 [[users]]
 id = 8277146073
-storages = ["local"]
+storages = ["local", "my_chat", "my_channel"]
+[[storages]]
+name = "my_chat"
+type = "telegram"
+enable = true
+chat_id = 8277146073
+[[storages]]
+name = "my_channel"
+type = "telegram"
+enable = true
+chat_id = -3937095043
